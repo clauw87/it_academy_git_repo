@@ -1,0 +1,16 @@
+
+#!/bin/bash
+# This is a basic bash script  about flags.
+
+while getopts u:p: option; do
+	case $option in
+		u) user=$OPTARG;;
+		p) pass=$OPTARG;;
+	esac
+done
+
+echo "User: $user / Pass: $pass"
+
+
+ p) pass=$OPTARG;;
+
